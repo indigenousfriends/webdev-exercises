@@ -9,6 +9,8 @@
             align-items: center;
             padding: 10px 20px;
             background-color: #f2f2f2;
+						position: sticky;
+						top: 0;
         }
 
 				.top-links a {
@@ -18,6 +20,19 @@
 					font-weight: 400;
 					line-height: normal;
 					text-decoration: none;
+				}
+
+				.search-bar input {
+					border-radius: 8px;
+					border: 1px solid #DFDFDF;
+					padding: 12px;
+					padding-left: 40px;
+					color: #707070;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					width: 350px;
 				}
 
 				.login-btn button {
@@ -34,6 +49,15 @@
 					font-weight: 600;
 					line-height: normal;
 				}
+
+				.placeholder-content p {
+					font-size: 3rem;
+				}
+
+				/* .top-links,
+				.search-bar {
+					display: none;
+				} */
 
         /* Phone Styles */
         @media (max-width: 767px) {
@@ -56,11 +80,7 @@
                 flex: 1;
             }
 
-            .search-bar {
-                flex: 1;
-                text-align: center;
-            }
-
+ 
             .login-btn {
                 margin-left: auto;
             }
@@ -71,3 +91,19 @@
                 display: none;
             }
         }
+
+				@media (min-width: 1024px) {
+					.search-bar {
+						flex: 0 1 auto;
+						text-align: center;
+						position: relative;
+						margin: 0 60px;
+					}
+
+					.search-icon-form {
+						position: absolute; 
+						left: 12px; 
+						top: 12px;
+					}
+
+				}
