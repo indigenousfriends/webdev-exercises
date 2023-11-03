@@ -1,0 +1,69 @@
+       /* Common styles */
+			 html {
+				font-family: Inter, sans-serif;
+			 }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f2f2f2;
+        }
+
+				.top-links a {
+					color: #000;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					text-decoration: none;
+				}
+
+				.login-btn {
+					display: flex;
+					padding: 12px;
+					align-items: flex-start;
+					gap: 10px;
+					color: #FFF;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: normal;
+				}
+
+        /* Phone Styles */
+        @media (max-width: 767px) {
+            .search-icon {
+                order: -1;
+                margin-right: auto;
+            }
+
+            .menu-icon {
+                order: 1;
+            }
+        }
+
+        /* Tablet and Desktop Styles */
+        @media (min-width: 768px) {
+            .top-links {
+                display: flex;
+                justify-content: center;
+                flex: 1;
+            }
+
+            .search-bar {
+                flex: 1;
+                text-align: center;
+            }
+
+            .login-btn {
+                margin-left: auto;
+            }
+
+            /* Hide the search icon and menu icon for desktop */
+            .search-icon,
+            .menu-icon {
+                display: none;
+            }
+        }
