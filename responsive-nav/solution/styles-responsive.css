@@ -1,0 +1,143 @@
+/* Common styles */
+html {
+  background-color: #f2f2f2;
+  color: #000;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 3rem;
+}
+
+header {
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+/* 
+  Here we are using some special CSS selectors - 
+  the child combinator > to select direct children of the header element
+  and wild-card * to select all element types
+*/
+header > * {
+  display: inline-block;
+}
+
+.logo img {
+  height: 25px;
+}
+
+.top-links a {
+  /* styles copied from Figma */
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.search-bar input {
+  /* styles copied from Figma */
+  border-radius: 8px;
+  border: 1px solid #DFDFDF;
+  padding: 12px;
+  padding-left: 40px;
+  color: #707070;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 350px;
+}
+
+button {
+  /* styles copied from Figma */
+  display: flex;
+  padding: 12px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #000;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.placeholder-content {
+  padding: 0 20px;
+}
+
+/* 
+  Mobile First - hide everything that you don't want to see on your smallest size (phone) 
+  and then use media queries to show things as the screen gets larger
+*/
+.login-btn,
+.search-bar,
+.top-links  {
+  display: none;
+}
+
+/* 
+  Phone styles 
+  This media query will apply styles when the screen is 767px or smaller
+*/
+@media (max-width: 767px) {
+  .search-icon {
+      order: -1;
+      margin-right: auto;
+  }
+
+  .menu-icon {
+      order: 1;
+  }
+}
+
+/*
+  Tablet Styles
+  This media query will apply styles when the screen is 768px or larger
+*/
+@media (min-width: 768px) {
+    .top-links {
+        display: inline-block;
+        justify-content: center;
+        gap: 40px;
+        flex: 1;
+    }
+
+    .login-btn {
+      display: inline-block;
+    }
+
+    /* Hide the search icon and menu icon for desktop */
+    .search-icon,
+    .menu-icon {
+        display: none;
+    }
+}
+
+/*
+  Desktop Styles
+  This media query will apply styles when the screen is 1024px or larger
+*/
+@media (min-width: 1024px) {
+  .search-bar {
+    display: inline-block; 
+  }
+
+  .search-icon-form {
+    display: none;
+  }
+}

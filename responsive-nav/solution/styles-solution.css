@@ -3,6 +3,10 @@
 				font-family: Inter, sans-serif;
 			 }
 
+			 img {
+				max-width: 100%;
+			 }
+
         header {
             display: flex;
             justify-content: space-between;
@@ -11,6 +15,7 @@
             background-color: #f2f2f2;
 						position: sticky;
 						top: 0;
+						z-index: 500;
         }
 
 				.top-links a {
@@ -50,14 +55,24 @@
 					line-height: normal;
 				}
 
+				.placeholder-content {
+					padding: 0 20px;
+				}
+
+				.placeholder-content h1 {
+					font-size: 4rem;
+				}
+
 				.placeholder-content p {
 					font-size: 3rem;
 				}
 
-				/* .top-links,
-				.search-bar {
-					display: none;
-				} */
+				.sticky-image {
+					position: sticky;
+					top: 100px;
+					width: 500px;
+					height: auto;
+				}
 
         /* Phone Styles */
         @media (max-width: 767px) {
