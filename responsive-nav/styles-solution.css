@@ -20,11 +20,14 @@
 					text-decoration: none;
 				}
 
-				.login-btn {
+				.login-btn button {
 					display: flex;
 					padding: 12px;
 					align-items: flex-start;
 					gap: 10px;
+					border-radius: 8px;
+					border: none;
+					background: #000;
 					color: #FFF;
 					font-size: 14px;
 					font-style: normal;
@@ -49,6 +52,7 @@
             .top-links {
                 display: flex;
                 justify-content: center;
+								gap: 40px;
                 flex: 1;
             }
 
