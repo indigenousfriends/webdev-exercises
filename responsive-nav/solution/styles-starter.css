@@ -23,7 +23,11 @@ header {
     background-color: #fff;
 }
 
-/* Here we are using some special CSS */
+/* 
+  Here we are using some special CSS selectors - 
+  the child combinator > to select direct children of the header element
+  and wild-card * to select all element types
+*/
 header > * {
   display: inline-block;
 }
