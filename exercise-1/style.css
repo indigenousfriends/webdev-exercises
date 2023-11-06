@@ -19,6 +19,10 @@ h1 {
   text-transform: capitalize;
 }
 
+h1 span {
+  color: #F86642;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
