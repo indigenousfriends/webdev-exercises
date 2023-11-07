@@ -18,22 +18,22 @@ p {
 	font-size: 3rem;
 }
 
-nav {
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	padding: 10px 20px;
 	background-color: #fff;
 }
-
-/* 
-  Here we are using some special CSS selectors - 
-  the child combinator > to select direct children of the header element
-  and wild-card * to select all element types
-*/
-nav > * {
-	display: inline-block;
-}
-
+	
 .logo img {
 	height: 25px;
+}
+
+.top-links {
+	display: flex;
+	align-items: center;
+	gap: 40px;
 }
 
 .top-links a {
@@ -58,6 +58,12 @@ nav > * {
 	font-weight: 400;
 	line-height: normal;
 	width: 350px;
+}
+
+.mobile-button-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 10px;
 }
 
 button {
