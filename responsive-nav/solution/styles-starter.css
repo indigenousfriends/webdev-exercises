@@ -1,26 +1,26 @@
 /* Common styles */
 html {
-  background-color: #f2f2f2;
-  color: #000;
-  font-family: Inter, sans-serif;
-  font-size: 16px;
+	background-color: #f2f2f2;
+	color: #000;
+	font-family: Inter, sans-serif;
+	font-size: 16px;
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 h1 {
-  font-size: 4rem;
+	font-size: 4rem;
 }
 
 p {
-  font-size: 3rem;
+	font-size: 3rem;
 }
 
-header {
-    padding: 10px 20px;
-    background-color: #fff;
+nav {
+	padding: 10px 20px;
+	background-color: #fff;
 }
 
 /* 
@@ -28,56 +28,51 @@ header {
   the child combinator > to select direct children of the header element
   and wild-card * to select all element types
 */
-header > * {
-  display: inline-block;
+nav > * {
+	display: inline-block;
 }
 
 .logo img {
-  height: 25px;
+	height: 25px;
 }
 
 .top-links a {
-  /* styles copied from Figma */
-  color: #000;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
+	/* styles copied from Figma */
+	color: #000;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-decoration: none;
 }
 
 .search-bar input {
-  /* styles copied from Figma */
-  border-radius: 8px;
-  border: 1px solid #DFDFDF;
-  padding: 12px;
-  padding-left: 40px;
-  color: #707070;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  width: 350px;
+	/* styles copied from Figma */
+	border-radius: 8px;
+	border: 1px solid #dfdfdf;
+	padding: 12px;
+	padding-left: 40px;
+	color: #707070;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	width: 350px;
 }
 
 button {
-  /* styles copied from Figma */
-  display: flex;
-  padding: 12px;
-  align-items: flex-start;
-  gap: 10px;
-  border-radius: 8px;
-  border: none;
-  background: #000;
-  color: #FFF;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+	/* styles copied from Figma */
+	padding: 12px;
+	border-radius: 8px;
+	border: none;
+	background: #000;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
 }
 
 .placeholder-content {
-  padding: 0 20px;
+	padding: 0 20px;
 }
 
 /* 
@@ -86,22 +81,19 @@ button {
 */
 .login-btn,
 .search-bar,
-.top-links  {
-  display: none;
+.top-links {
+	display: none;
 }
 
 /* 
   Phone styles 
-  This media query will apply styles when the screen is 767px or smaller
+  Add a media query that will apply styles when the screen is 360px or larger
 */
-
-
 
 /*
   Tablet Styles
   This media query will apply styles when the screen is 768px or larger
 */
-
 
 /*
   Desktop Styles
