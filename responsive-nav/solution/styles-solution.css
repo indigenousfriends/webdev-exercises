@@ -75,7 +75,7 @@
 				}
 
         /* Phone Styles */
-        @media (max-width: 767px) {
+        @media (max-width: 767px and min: 320px) {
             .search-icon {
                 order: -1;
                 margin-right: auto;

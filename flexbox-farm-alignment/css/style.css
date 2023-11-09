@@ -1,0 +1,34 @@
+body {
+  background-color: #E9E9E9;
+  padding: 50px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 40px;
+}
+
+img {
+  width: 100px;
+}
+
+.container {
+  border: 3px solid #73AD21;
+  background-color: #BED6CC;
+  width: 80%;
+  height: 250px;
+  margin: 50px auto;
+  padding: 20px 10px;
+
+  /* Flexbox stuff */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Add justification and alignment properties here */
+  
+}
+
+.item {
+  border:1px solid dotted;
+}

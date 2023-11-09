@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+  border: 3px solid black;
+  /* Add relative positioning here */
+  position: relative;
+  width: 80%;
+  /* overflow: hidden; */
+  margin: 0 auto;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.navigation {
+  background-color: #41436A;
+}
+
+.sidebar {
+  background-color: #F64668;
+  height: 360px;
+  width: 20%;
+  /* Add asolute positioning here */
+  position: absolute;
+
+  /* We can use 'top', 'bottom', 'left', 'right' to set the distance from the relative container */
+  top: 50%;
+  /* bottom: 0; */
+  left: 50%;
+position: -webkit-sticky;   /* right: 50%; */
+  margin: auto;
+}
+
+.content {
+  background-color: #FE9677;
+  min-height: 1200px;
+  width: 100%;
+}

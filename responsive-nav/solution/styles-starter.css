@@ -87,21 +87,31 @@ button {
 */
 .login-btn,
 .search-bar,
-.top-links {
+.top-links,
+.logo-desktop {
 	display: none;
 }
-
-/* 
-  Phone styles 
-  Add a media query that will apply styles when the screen is 360px or larger
-*/
 
 /*
   Tablet Styles
   This media query will apply styles when the screen is 768px or larger
 */
+@media screen and (min-width: 768px) {
+	.logo-desktop {
+		display: block;
+	}
+
+	.logo-mobile {
+		display: none;
+	}
+}
 
 /*
   Desktop Styles
   This media query will apply styles when the screen is 1024px or larger
 */
+@media screen and (min-width: 1024px) {
+	.search-bar {
+		display: block;
+	}
+}

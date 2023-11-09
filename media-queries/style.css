@@ -1,0 +1,51 @@
+ html {
+  font-family: 'Courier New', Courier, monospace;
+ }
+ 
+ h1 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  button {
+    border: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+  }
+
+  .magic-button {
+    background-color: blue;
+  }
+
+  .desktop-image {
+    display: none; /* This hides the desktop image */
+  }
+
+  /* Desktop 
+    They will overwrite the styles above for screens that are 1024px or larger
+  */
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 50px;
+    }
+
+    .magic-button {
+      background-color: red;
+    }
+    
+    /* Hide the mobile image (puppy) */
+    .mobile-image {
+      display: none;
+    }
+
+    /* Show the desktop image (orcas). */
+    .desktop-image {
+      display: block;
+    }
+
+  } /* Don't type anything below this line */
