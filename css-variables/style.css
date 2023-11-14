@@ -1,0 +1,117 @@
+/* Global styles */
+body {
+  background-color: #E0EAF3;
+  color: #1D1D1B;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto; /* center the page */
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 54.5px;
+  text-transform: capitalize;
+}
+
+h1 span {
+  color: #F86642;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+/* Using Flexbox for the nav layout - we will work on this more soon */
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+}
+
+nav ul li {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  color: #1D1D1B;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px; 
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #1D1D1B;
+}
+
+nav li a:hover { 
+  color: #F86642; 
+}
+
+/* we can set default styles for the nav links and then override them on hover */
+button {
+  border: none;
+  border-radius: 9px;
+  background: #F86642;
+  color: #FFF;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 10px 27px;
+}
+
+button:hover {
+  background: #1D1D1B;
+  color: #FFF;
+}
+
+button.cta-button {
+  border-radius: 15px;
+  background: linear-gradient(91deg, rgba(248, 102, 66, 0.75) 18.73%, rgba(248, 102, 66, 0.90) 100%);
+  padding: 10px 16px;
+  margin: 16px auto;
+}
+
+.inline-icon-list {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+}
+
+.inline-icon-list li {
+  display: inline-block;
+  margin-right: 27px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 26px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.inline-icon-list li:before {
+  content: "";
+  background-image: url("images/checkmark.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: 27px;
+  width: 27px;
+  color: #F86642;
+  position: absolute;
+  left: 0;
+}
