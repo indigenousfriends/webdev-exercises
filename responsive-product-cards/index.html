@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <viewport meta="width=device-width, initial-scale=1">
+  <title>Responsive Product Cards</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>The Self Care Lounge</h1>
+    <header>
+      <div class="image-wrapper">
+        <!-- We'll add an image here -->
+        <img src="images/product-header.jpg" alt="hero-image">
+      </div>
+    </header>
+    <section>
+    <div class="wrapper">
+      <div class="product-card">
+        <div class="product-image">
+          <!-- Example using srcset -->
+          <img alt="product-image" src="images/product-photo-1.jpg" 
+            srcset="
+              images/responsive/product-photo-1-small.jpg 1200w,
+              images/responsive/product-photo-1-medium.jpg 768w,
+              images/responsive/product-photo-1-large.jpg 600w, 
+              "
+
+            sizes="(max-width: 480px) 100vw, 
+            (max-width: 1024px) 50vw, 
+            33vw"
+              
+          >
+          <!-- use srcset for responsive product photo -->
+
+          <!-- <img
+            sizes="(max-width: 1250px) 40vw, 500px"
+            srcset="
+            product-photo-1_eay7fy_c_scale,w_480.jpg 480w,
+            product-photo-1_eay7fy_c_scale,w_500.jpg 500w"
+            src="product-photo-1_eay7fy_c_scale,w_500.jpg"
+            alt=""
+          > -->
+        </div>
+        <div class="product-info">
+          <h3>Hair Mask</h5>
+          <h4>Like a mask - but for hair</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+          <div class="price">
+            <span>Price: $39.99</span>
+          </div>
+          <div class="action">
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/product-photo-2.jpg" alt="product-image"
+          srcset="./images/responsive/product-photo-1-large 200w">
+        </div>
+        <div class="product-info">
+          <h3>Yummy Juice</h5>
+          <h4>100% Natural</h6>
+          <p>Voluptates impedit pariatur nisi at, minima fugit? Ratione cum repellendus suscipit!</p>
+          <div class="price">
+            <span>Price: $6.99</span>
+          </div>
+          <div class="action">
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/product-photo-3.jpg" alt="product-image">
+        </div>
+        <div class="product-info">
+          <h3>Body Balm</h5>
+          <h4>It's the balm baby!</h6>
+          <p> Consequuntur error rerum esse rem eligendi nobis iste, voluptate necessitatibus ea voluptates</p>
+          <div class="price">
+            <span>Price: $19.99</span>
+          </div>
+          <div class="action">
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+</body>
+</html>

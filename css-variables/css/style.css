@@ -1,14 +1,44 @@
+/* Variables */
+:root {
+  /* add some variables here */
+}
+
 /* Global styles */
 body {
   background-color: #E0EAF3;
   color: #1D1D1B;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
+section {
+  padding: 50px 0;
+  background: #F6F6F6;
+}
+
 .wrapper {
-  max-width: 960px;
+  width: 1200px;
+  max-width: 100%;
   margin: 0 auto; /* center the page */
+}
+
+nav .wrapper {
+  width: 960px;
+}
+
+section.hero-section {
+  background-color: transparent;
+  padding-bottom: 0;
+}
+
+.hero-section .wrapper {
+  padding-bottom: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
 }
 
 h1 {
@@ -19,14 +49,21 @@ h1 {
   text-transform: capitalize;
 }
 
-h1 span {
+h2 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 47px;
+}
+
+h1 span,
+h2 span {
   color: #F86642;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 30px;
+  padding: 20px 27px;
 }
 
 /* Using Flexbox for the nav layout - we will work on this more soon */
@@ -114,4 +151,53 @@ button.cta-button {
   color: #F86642;
   position: absolute;
   left: 0;
+}
+
+.callout-banner {
+  background: #292526;
+  color: #FFF;
+}
+
+.logo-grid  {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+}
+
+.logo-grid div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-grid div:not(:last-of-type) { border-right: 1px solid #F86642; }
+
+.card-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 27px;
+  margin: 27px;
+}
+
+.card {
+  flex: 1 1 30%;
+}
+
+.icon-wrapper {
+  border-radius: 100%;
+  background-color: #F86642;
+  color: #FFF;
+  width: 59px;
+  height: 59px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 27px;
 }
