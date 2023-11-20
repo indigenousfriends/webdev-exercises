@@ -24,6 +24,10 @@ html {
 
 .navigation {
   background-color: #41436A;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .sidebar {
@@ -31,14 +35,11 @@ html {
   height: 360px;
   width: 20%;
   /* Add asolute positioning here */
-  position: absolute;
 
   /* We can use 'top', 'bottom', 'left', 'right' to set the distance from the relative container */
-  top: 50%;
-  /* bottom: 0; */
-  left: 50%;
-position: -webkit-sticky;   /* right: 50%; */
-  margin: auto;
+  top: 100px;
+  left: 20px;
+  position: sticky;  
 }
 
 .content {
