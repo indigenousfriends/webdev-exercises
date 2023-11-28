@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Style+Script&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="./css/normalize.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./css/style.css"
+		/>
+		<title>Accessible HTML Forms</title>
+	</head>
+	<body>
+		<header>
+			<div class="wrapper">
+				<h1>Accessible HTML Forms</h1>
+			</div>
+		</header>
+		<section>
+			<div class="wrapper">
+				<h2>Contact Us!</h2>
+				<div class="form-container">
+					<div class="text-image-overlay">
+						<img
+							src="./images/sunset.png"
+							alt="A sunset over a desert landscape"
+						/>
+						<div class="overlay-text">
+							<h3>We look forward to connecting!</h3>
+							<p>We would love to hear from you! Please fill out the contact form to get in touch.</p>
+							<p>In your message, please let us know a little about yourself and how we can assist you.</p>
+						</div>
+					</div>
+					<div>
+						<form>
+							<div class="form-wrapper">
+								<div class="form-group">
+									<label for="name">First Name</label>
+									<input
+										type="text"
+										id="name"
+										placeholder="Name"
+									/>
+									<!-- last name -->
+									<label for="last-name">Last Name</label>
+									<input
+										type="text"
+										id="last-name"
+										placeholder="Last Name"
+									/>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input
+									type="email"
+									id="email"
+									placeholder="Email"
+								/>
+								<label for="help">What Can We Help You With?</label>
+								<select id="help">
+									<option value="product">Product</option>
+									<option value="service">Service</option>
+									<option value="expertise">Expertise</option>
+									<option value="other">Other</option>
+								</select>
+								<label for="description">Description</label>
+								<textarea
+									id="description"
+									placeholder="Description"
+								></textarea>
+							</div>
+							<div class="form-group">
+								<button type="submit">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

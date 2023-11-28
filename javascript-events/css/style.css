@@ -1,0 +1,78 @@
+html {
+	font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+body {
+	background-color: #f9f9f9;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+button {
+	padding: 10px 20px;
+	border: 2px solid #000;
+	cursor: pointer;
+	border-radius: 3px;
+	background-color: #000;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.65rem;
+	font-weight: 400;
+	color: #000; /* Fix the color contrast on our buttons */
+	font-weight: bold;
+	transition: all 0.15s ease-in-out;
+}
+
+button:hover {
+	background-color: #333;
+	transform: scale(1.01);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	padding: 1rem;
+}
+
+.wrapper {
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 1rem;
+	border: 1px solid #000;
+	background-color: #f9f9f9;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	align-items: center;
+	gap: 2rem;
+}
+
+#button-pink {
+	background-color: #ff6392;
+}
+
+#button-yellow {
+	background-color: #ffe45e;
+}
+
+#button-blue {
+	background-color: #7fc8f8;
+}
+
+@media (min-width: 768px) {
+	.wrapper {
+		flex-flow: row wrap;
+	}
+}

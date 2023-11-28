@@ -1,0 +1,126 @@
+:root {
+	--font-family-main: Lato, Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+	--font-family-heading: 'Josefin Sans', sans-serif;
+
+	--font-weight-bold: 700;
+
+	--color-white: #fff;
+	--color-teal: #007a80;
+
+	--spacing-sm: 10px;
+	--spacing-md: 24px;
+	--spacing-lg: 40px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+html {
+	font-family: var(--font-family-main);
+}
+
+body {
+	background: #faf9f6;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--font-family-heading);
+	font-weight: var(--font-weight-bold);
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: var(--spacing-md);
+}
+
+h2 {
+	font-size: 2.5rem;
+	margin-bottom: var(--spacing-md);
+}
+
+h3 {
+	font-size: 2rem;
+	margin-bottom: var(--spacing-md);
+}
+
+.wrapper {
+	width: 1230px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: var(--spacing-lg);
+}
+
+header {
+	background-color: var(--color-teal);
+	color: var(--color-white);
+	padding: var(--spacing-md);
+}
+
+header .wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: var(--spacing-sm) 0;
+	text-align: center;
+}
+
+.form-container {
+	background-color: var(--color-white);
+	display: flex;
+	padding: var(--spacing-lg);
+}
+
+/* Selecting only the child divs of .form-container (not the grandchildren today lol) */
+.form-container > div {
+	flex: 1;
+}
+
+.form-wrapper {
+	display: flex;
+	flex-flow: column;
+}
+
+.text-image-overlay {
+	position: relative;
+}
+
+.text-image-overlay .overlay-text {
+	color: var(--color-white);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: var(--color-white);
+	text-align: center;
+	width: 100%;
+	padding: var(--spacing-md);
+}
+
+.text-image-overlay .overlay-text h2 {
+	font-size: 3rem;
+	margin-bottom: var(--spacing-md);
+}
+
+.form-container form {
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.form-container {
+		flex-flow: column;
+	}
+	.form-container > div {
+		margin-bottom: var(--spacing-lg);
+	}
+	.text-image-overlay {
+		margin-bottom: var(--spacing-lg);
+	}
+}

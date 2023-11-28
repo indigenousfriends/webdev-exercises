@@ -1,0 +1,328 @@
+:root {
+	--color-pink-salmon: #ff91a4;
+
+	--font-family-main: Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+	--font-family-cursive: 'Style Script', 'Pacifico', cursive;
+	--font-size-base: 16px;
+	--font-size-large: 24px;
+
+	/*  Keep practicing with variables! */
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* We can target the aria-hidden attribute in our HTML to skip over elements that are not important */
+[aria-hidden='true'] {
+	display: none;
+}
+
+/* We can target the aria-label aattribute in HTML to make items only visible to screen readers */
+[aria-label] {
+	/* This is a good way to hide text from sighted users but still make it available to screen readers */
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+img {
+	max-width: 100%;
+}
+
+html {
+	font-family: var(--font-family-main);
+	font-size: var(--font-size-base);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+	color: var(--color-pink-salmon);
+	font-family: var(--font-family-cursive);
+	font-size: 68px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3,
+h4 {
+	margin: 10px auto 0px;
+}
+
+h3 {
+	font-size: var(--font-size-large);
+}
+
+h4 {
+	font-size: 0.8em;
+}
+
+a {
+	color: var(--color-pink-salmon);
+}
+
+a:hover {
+	/* The hover state should be different than the default so users percieve the interaction */
+	/* color: var(--color-pink-salmon); */
+	color: #333;
+	/* text-decoration: none; */
+}
+
+/* Add a focus state to our links */
+a:focus {
+	outline: 3px solid var(--color-pink-salmon);
+}
+
+a:active {
+	color: #333;
+}
+
+.wrapper {
+	background-color: var(--color-pink-salmon);
+	border-radius: 5px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+
+	/* Try using relative units for the gap property */
+	gap: 20px;
+	margin: 0 auto;
+	width: 1200px;
+	max-width: 90%;
+	padding: 50px 30px;
+}
+
+.image-wrapper {
+	height: 500px;
+	margin-bottom: 50px;
+}
+
+.image-wrapper img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.product-card {
+	/* What happens when you change the flex-basis (300px) to a percentage? How about using rems? */
+	flex: 1 0 300px;
+	display: flex;
+	background-color: #eee;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	transition: 0.4s ease-in-out;
+}
+
+.product-image {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	width: 100%;
+	height: 180px;
+	overflow: hidden;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.product-image img {
+	width: 100%;
+	border-radius: 5px;
+	background-color: #eee;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 10px;
+}
+
+.product-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 30px;
+	font-size: var(--font-size-large);
+}
+
+.product-info p {
+	/* font-size: 11px; */
+	font-size: 1.03rem; /* Increase the font size for better readability */
+}
+
+.price {
+	/* Try using ems here */
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.action {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 15px;
+	width: 100%;
+}
+
+/* Use the semantic <header> tag instead of a div. */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #fff;
+}
+
+.logo img {
+	height: 25px;
+}
+
+.top-links {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	list-style: none; /* it's a list now! */
+}
+
+.top-links a {
+	/* styles copied from Figma */
+	color: #000;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-decoration: none;
+}
+
+.search-bar input {
+	/* styles copied from Figma */
+	border-radius: 8px;
+	border: 1px solid #dfdfdf;
+	padding: 12px;
+	padding-left: 40px;
+	color: #707070;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	width: 350px;
+}
+
+.mobile-button-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+button {
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #000;
+	text-align: center;
+	text-decoration: none;
+	/* color: #333; */
+	color: #fff; /* Fix the color contrast on our buttons */
+	font-weight: bold;
+	transition: all 0.4s ease-in-out;
+}
+
+button:hover {
+	background-color: #333;
+	transform: scale(1.1);
+}
+
+.hero {
+	position: relative;
+}
+
+.hero h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* opacity: 0.8; */
+}
+
+.footer {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	align-items: center;
+}
+
+/* 
+  Mobile First - hide everything that you don't want to see on your smallest size (phone) 
+  and then use media queries to show things as the screen gets larger
+*/
+.login-btn,
+.search-bar,
+.top-links {
+	display: none;
+}
+
+/*
+  Tablet Styles
+  This media query will apply styles when the screen is 768px or larger
+*/
+@media screen and (min-width: 768px) {
+	.top-links {
+		display: flex;
+		justify-content: flex-end;
+		gap: 40px;
+		flex: 1;
+	}
+
+	.menu-icon {
+		display: none;
+	}
+}
+
+/*
+  Desktop Styles
+  This media query will apply styles when the screen is 1024px or larger
+*/
+@media screen and (min-width: 1024px) {
+	.search-bar {
+		display: flex;
+		flex: 1;
+		justify-content: center;
+	}
+}
+
+/* Accessibility media queries */
+
+@media (prefers-reduced-motion) {
+	/* Get rid of the transform/scale effect for those who prefer reduced motion  */
+	button:hover {
+		transform: none;
+	}
+}
+
+/* contrast media query */
+
+@media (prefers-contrast: more) {
+	/* Add more contast to our button */
+	botton:hover,
+	botton:active,
+	botton:focus {
+		outline: 3px solid var(--color-pink-salmon);
+	}
+}

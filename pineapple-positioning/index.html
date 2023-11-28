@@ -4,17 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pineapple Positioning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="normalize.css" />
   <link rel="stylesheet" href="normalize.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <section>
     <div class="relative-container flex-column">
-      <img src="./images/pineapple.png" alt="pineapple" />
       <div class="absolute-container flex-column">
         <h2>Pineapple Island: Where Every Home is a Slice of Paradise</h2>
         <p>a community that gives you a taste of happiness, a place you’ll love to live and an opportunity to build a home.</p>
         <button>Get in Touch</button>
+      </div>
+      <div class="image-container">
+        <img src="./images/pineapple-2.png" alt="pineapple"
+        srcset="
+          ./images/pineapple-wide@2x.png 2x,
+          ./images/pineapple-wide.png 1x,
+          ./images/pineapple-mobile.png 768w,
+          ./images/pineapple-mobile.png 300w,"
+        />
       </div>
     </div>
   </section>
